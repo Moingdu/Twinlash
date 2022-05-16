@@ -1,0 +1,370 @@
+@font-face {
+    font-family: 'SuseongDotum';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/SuseongDotum.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+* {margin:0; padding:0;}
+li {list-style: none;}
+body, html {overflow-x:hidden;}
+a {text-decoration:none; display:block; color:black;font-family: 'SuseongDotum';}
+header, section, footer {width:100%; float:left;}
+header, section, footer, div {box-sizing: border-box; display: block;}
+body {font-size:15px; font-family: 'SuseongDotum';}
+img {width:100%;}
+.hamberger {display:none;}
+header {position:absolute; z-index: 100;}
+header .menu {z-index: 100;}
+header .menu ul li img{width:150px; margin-left:200px; margin-top:-10px;}
+header .menu ul li {float:left; font-size: 17px;}
+header .menu ul li a {margin: 45px 40px;}
+header .menu ul li:nth-child(2) {margin-left:70px;}
+header .menu ul {float:left;}
+header .menu .menu_img {display:none;}
+section .main {width:100%; height:100vh;}
+section .main .visual_box {position: relative;}
+section .main .visual_box ul {width:1000000px;  position: absolute;}
+section .main .visual_box ul li {float:left; width:1920px; height:100vh;}
+section .main .visual_box ul li .text {position:absolute;}
+section .main .visual_box ul li .background {position:absolute;}
+section .main .visual_box .visual_1 .background {background-image: url(../img/v1.jpg); width:1920px; height:100vh; background-size:cover; background-position:top;}
+section .main .visual_box .visual_1 .text {padding:350px 0 0 400px; }
+section .main .visual_box .visual_1 p {font-size: 60px;}
+section .main .visual_box .visual_1 span a {font-size: 20px; color:#fff; float:left; margin:50px 40px 0 0; border:1px solid black; border-radius: 50px; background-color: black; padding:10px 30px 10px 30px;}
+section .main .visual_box .visual_2 .background {background-image: url(../img/v2.jpg); width:1920px; height:100vh; background-size:cover; background-position:top;}
+section .main .visual_box .visual_2 .text {padding:350px 0 0 400px;}
+section .main .visual_box .visual_2 p {font-size:60px;}
+section .main .visual_box .visual_2 span a {font-size: 25px; color:#fff; float:left; margin:50px 40px 0 0; border:1px solid black; border-radius: 50px; background-color: black; padding:10px 30px 10px 30px;}
+section .main .visual_box span a:hover {border:1px solid rgb(255, 136, 158); background-color: rgb(255, 136, 158);  transition:all 0.5s;}
+section .main .slide {background-color: rgb(255, 136, 158); opacity: 80%; height:100vh; width:250px; margin-left:100px; float:right; transition:all 1s;}
+section .main .slide p { color:#fff;}
+section .main .slide img {width:65px; margin-top:445px; float:left; margin-left:10px; animation: fadeInLeft 0.8s infinite alternate;}
+@keyframes fadeInLeft {
+    from {margin-left:-5px; opacity: 1;}
+    to {margin-left:15px; opacity: 0.5;}
+}
+section .main .slide p {font-size: 30px; margin-top:430px; margin-left:80px; position:absolute; line-height: 50px;}
+section .main .slide .pc .sub_2 {display:none;}
+section .main .slide .mobile {display:none;}
+section .first_banner {width:100%; height: 100vh;  background: linear-gradient(rgb(253, 238, 248), rgb(254, 217, 241)); position: relative;}
+section .first_banner .b_box {margin:0 auto; float:right;}
+section .first_banner .left {float:left;}
+section .first_banner .left p {font-size: 40px; padding:270px 0 180px 0px;}
+section .first_banner .left span {font-size: 20px; border:1px solid rgb(255, 136, 158); background-color: rgb(255, 136, 158); border-radius: 50px; padding:7px 50px 7px 20px; color:#fff; display: inline;}
+section .first_banner .left h6 {color:rgb(255, 136, 158); margin:30px 0 0 0px; font-size: 14px;}
+section .first_banner .left a {color:#fff; display:inline; margin-left:0px;}
+section .first_banner .left img {width:30px; margin-left:-40px; margin-top:-4px; position:absolute;}
+section .first_banner .right {float:right; margin-top:-40px; margin-left:100px;}
+section .first_banner .right .top {width:60vw; height:100vh; position:relative; overflow: hidden;}
+section .first_banner .right .top ul {width:10000px; position:absolute;}
+section .first_banner .right .top ul li {width:300px; float:left; text-align: center; background-color: #fff; border-radius:10px; margin-top: 300px; margin-right:30px; }
+section .first_banner .right .top p {height:150px; margin-top:40px;}
+section .first_banner .right .top .box {width:300px; height:300px; border-top-left-radius: 10px; border-top-right-radius: 10px; display:block;}
+section .first_banner .right .top .box1 {background-image: url(../img/b1.jpg); background-size:cover; background-position:center;}
+section .first_banner .right .top .box2 {background-image: url(../img/b2.jpg); background-size:cover; background-position:center;}
+section .first_banner .right .top .box3 {background-image: url(../img/b3.jfif); background-size:cover; background-position:center;}
+section .first_banner .right .top .box4 {background-image: url(../img/b4.jpg); background-size:cover; background-position:center;}
+section .first_banner .right .top .box5 {background-image: url(../img/b5.jpg); background-size:cover; background-position:center;}
+section .first_banner .bar_box {float:left;}
+section .first_banner .bar {width:1150px; height:3px; margin-top:-120px; background-color: #ccc; border-radius: 5px; position:absolute;}
+section .first_banner .colorbar {width:20%; height:3px; position:absolute; background-color:  rgb(255, 136, 158); border-radius: 5px;}
+section .second_banner img {width:220px;}
+section .second_banner .s_box {width:100%; margin:0 auto;}
+section .second_banner .s_box .s_text .time.active {font-size: 40px; margin:20px 0 0 350px; position:fixed; top:200px; z-index: 1;}
+section .second_banner .s_box .s_text .float_menu.active {right:1px; margin-right:350px; position:fixed; top:200px; z-index: 1;}
+section .second_banner .s_box .s_text .time {font-size: 40px; margin:20px 0 0 350px; float:left; transition: all 1s;}
+section .second_banner .s_box .s_text .float_menu {float:right; margin-right:350px; transition: all 1s;}
+section .second_banner .s_box .s_text .float_menu h1 {font-size: 40px;}
+section .second_banner .s_box .s_text .float_menu .text_group {margin-top:15px;}
+section .second_banner .s_box .s_text .float_menu p {font-size:30px; color:rgb(255, 136, 158); margin-bottom: 8px;}
+section .second_banner .s_box .s_text .float_menu span {font-size:20px; line-height: 32px; color:#595959; display:block;}
+section .second_banner .s_box .s_text .float_menu .fm_menu {margin-top:25px; transition: all 1s;}
+section .second_banner .s_box .s_center {width:1920px; margin:0 auto;}
+section .second_banner .s_box .s_center .first_phone {height:100vh; margin-top:160px;}
+section .second_banner .s_box .s_center .first_phone .fp1 { transition: all 1s; margin-left:90px;}
+section .second_banner .s_box .s_center .first_phone .fp2 {margin-top:140px; margin-left:50px; position:absolute; transition: all 1s;}
+section .second_banner .s_box .s_center .second_phone {height:100vh;}
+section .second_banner .s_box .s_center .second_phone img {transition: all 1s;}
+section .second_banner .s_box .s_center .third_phone {height:650px; margin-left:-200px;}
+section .second_banner .s_box .s_center .third_phone .fp3 {width:230px; opacity: 80%; margin-top:50px; transition: all 1s;}
+section .second_banner .s_box .s_center .third_phone .fp4 {width:270px; position:absolute; margin-left:-100px; transition: all 1s;}
+section .third_banner {height:100vh; width:100%;}
+section .third_banner .th_box {width:1700px; position:relative; margin:0 auto;}
+section .third_banner .backimg {background-image: url(../img/back.png); background-size:cover; background-position:center; width:110%; height:940px; position:absolute; z-index: 8; transition:all 1s;}
+section .third_banner .t_text {position:absolute; z-index: 20; margin:250px 0 0 70px;}
+section .third_banner .t_text > p {font-size: 50px;}
+section .third_banner .t_text .number {margin-top:50px;}
+section .third_banner .t_text .number .numberset { margin-top:30px; }
+section .third_banner .t_text .number .numberset span {font-size: 33px;}
+section .third_banner .t_text .info {font-size: 13px; color:#595959; margin-top:30px;}
+section .third_banner .t_text .numberset .f_number {color:rgb(255, 136, 158); margin-left:150px;}
+section .third_banner .t_text .numberset .s_number {color:rgb(255, 136, 158); margin-left:223px;}
+section .third_banner .t_text .numberset .t_number {color:rgb(255, 136, 158); margin-left:255px;}
+section .third_banner .t_text .numberset .f_number::after {content:"일"; color:rgb(255, 136, 158);}
+section .third_banner .t_text .numberset .s_number::after {content:"%"; color:rgb(255, 136, 158);}
+section .third_banner .t_text .numberset .t_number::after {content:"%"; color:rgb(255, 136, 158);}
+section .third_banner .text {position:absolute; z-index: 20; margin-left:40px;}
+section .third_banner .text span a {font-size: 20px; color:#fff; float:left; margin:700px 0 0 30px; border:1px solid black; border-radius: 50px; background-color: black; padding:10px 30px 10px 30px;}
+section .third_banner .text span a:hover {border:1px solid rgb(255, 136, 158); background-color: rgb(255, 136, 158);  transition:all 0.5s;}
+section .fourth_banner {width:100%; height:1850px;}
+section .fourth_banner .fr_box {width:1920px; margin:0 auto;}
+section .fourth_banner .title {font-size: 45px; margin:150px 0 50px 260px; transition: all 3s;}
+section .fourth_banner .best_box {transition: all 1s;}
+section .fourth_banner .best_box .best { position: relative; width:700px; height:720px; float:left; overflow:hidden; cursor: pointer;}
+section .fourth_banner .best_box .f_img {background-image: url(../img/s1.png); background-size:cover; background-position:center;}
+section .fourth_banner .best_box .s_img {background-image: url(../img/s2.jpg); background-size:cover; background-position:center;}
+section .fourth_banner .best_box .t_img {background-image: url(../img/s3.jpg); background-size:cover; background-position:center;}
+section .fourth_banner .best_box .ff_img {background-image: url(../img/s4.jpeg); background-size:cover; background-position:center;}
+section .fourth_banner .best_box .img {width:700px; height:700px; border-radius: 30px; position:absolute;}
+section .fourth_banner .best_box .f_best,
+section .fourth_banner .best_box .t_best {margin-left:260px;}
+section .fourth_banner .best_box .s_best,
+section .fourth_banner .best_box .ff_best {margin-left:20px;}
+section .fourth_banner .best_box .plus {width:35px; margin-left:620px; margin-top:35px;}
+section .fourth_banner .best_box .hover {width:700px; height:700px; background-color: rgb(255, 136, 158); border-radius: 30px; position:absolute; display:none;}
+section .fourth_banner .best_box .phone {width:700px; position:absolute; margin-top:-164px; margin-left:10px;}
+section .fourth_banner .best_box .hover p {font-size: 30px; margin:35px 0 0 50px;}
+section .fourth_banner .best_box .hover span {font-size:20px; margin:35px 0 0 50px; display:block; color: #444444;}
+section .fourth_banner .best_box .hover .sub_hover {transition: all 1s;}
+section .fifth_banner {width:100%; height:500px;}
+section .fifth_banner .faq {width:1920px; height:500px; margin:0 auto;}
+section .fifth_banner .faq .f_title {font-size: 35px;  margin-left:260px; transition: all 1s;}
+section .fifth_banner .faq img {width:30px; float:right;}
+section .fifth_banner .faq span {font-size: 30px; color:rgb(255, 136, 158); float:left; margin-right:15px; margin-left:15px;}
+section .fifth_banner .faq .question p {font-size: 30px; float:left; }
+section .fifth_banner .faq .answear p {font-size: 20px; color:#595959;}
+section .fifth_banner .faq_box {width:100%; margin-left:260px; margin-top:80px; transition: all 1s;}
+section .fifth_banner .faq .q_right {float:left; margin-left:300px;}
+section .fifth_banner .faq .q_left {width:400px; float:left;}
+section .fifth_banner .faq ul li {width:650px; border-bottom: 1px solid #000; margin-top: 10px; padding-bottom:10px;}
+section .fifth_banner .answear {margin-left:55px; overflow: hidden; height:0;}
+section .fifth_banner .question {cursor: pointer; height:70px; margin-top: 40px;}
+section .fifth_banner .l_question {height:120px;}
+section .fifth_banner .question .arrow {transform: rotate(180deg); transition: all 0.3s}
+section .fifth_banner .question .arrow.active {transform: rotate(0);}
+footer {width:100%; margin-top:200px;}
+footer .ft_box {width:100%; height:230px; background-color: #222222; color:#fff; transition: all 1s;}
+footer .ft_box .ftl_box {width:1390px; margin:0 auto; padding-top:15px;}
+footer .ft_box .ftl_box h1 {float:left; font-size: 23px; margin-top: 32px;}
+footer .ft_box .ftl_box .ftl_top {height:70px;}
+footer .ft_box .ftl_box .ftl_top li a {font-size:13px; float:left; margin-top:40px; margin-left:30px; color:#fff}
+footer .ft_box .ftl_box .ftl_top li a.active {color:#b9b9b9;}
+footer .ft_box .ftl_box address {width:800px;height:70px; margin-top:13px;}
+footer .ft_box .ftl_box address span {font-size:13px; float:left; border-right:1px solid #b9b9b9; margin-right:10px; padding-right:10px; margin-top:10px; font-style:normal;}
+footer .ft_box .ftl_box p {font-size: 12px; color:#b9b9b9;}
+footer .ft_box .ftr_box {right:10%; position:absolute;}
+footer .ft_box .ftr_box ul {margin-top:-100px;}
+footer .ft_box .ftr_box ul li {float:right;}
+footer .ft_box .ftr_box img {width:40px; float:right; margin-left:20px;}
+
+@media screen and (max-width:1800px){
+section .second_banner .s_box .s_text .time {font-size:35px; margin:20px 0 0 250px;}
+section .second_banner .s_box .s_text .time.active {font-size:35px; left:0; margin:20px 0 0 250px;}
+section .second_banner .s_box .s_text .float_menu {font-size:35px; margin-right:250px; margin-left:198px;}
+section .second_banner .s_box .s_text .float_menu.active {margin-right:250px;}
+section .second_banner .s_box .s_center .first_phone .fp1 {margin-left:-45px;}
+section .second_banner .s_box .s_center .second_phone img {margin-left:-100px;}
+section .second_banner .s_box .s_center .third_phone .fp3 {width:160px; margin-left:-40px;}
+section .second_banner .s_box .s_center .third_phone .fp4 {width:200px; margin-left:-80px;}
+}
+
+/*노트북 : max-width:1600px, max-width:1440px, max-width:1200px*/
+@media screen and (max-width:1600px){
+header .menu ul li img {margin-left:100px;}
+section .main .visual_box .visual_1 .text,
+section .main .visual_box .visual_2 .text {padding:350px 0 0 250px;}
+section .first_banner .bar {width:960px;}
+section .second_banner img {width:180px;}
+section .second_banner .s_box .s_text .time {font-size:35px; margin:20px 0 0 180px;}
+section .second_banner .s_box .s_text .time.active {font-size:35px; left:0; margin:20px 0 0 180px;}
+section .second_banner .s_box .s_text .float_menu {font-size:35px; margin-right:180px; margin-left:198px;}
+section .second_banner .s_box .s_text .float_menu.active {margin-right:180px;}
+section .second_banner .s_box .s_text .float_menu h1 {font-size: 35px;}
+section .second_banner .s_box .s_text .float_menu .text_group {margin-top:15px;}
+section .second_banner .s_box .s_text .float_menu p {font-size:23px; color:rgb(255, 136, 158); margin-bottom: 8px;}
+section .second_banner .s_box .s_text .float_menu span {font-size:18px; line-height: -40px; color:#595959; display:block;}
+section .second_banner .s_box .s_text .float_menu .fm_menu {margin-top:25px; transition: all 1s;}
+section .second_banner .s_box .s_center .first_phone .fp1 {margin-left:-35px;}
+section .second_banner .s_box .s_center .second_phone img {margin-left:-130px;}
+section .second_banner .s_box .s_center .third_phone .fp3 {width:160px; margin-left:-80px;}
+section .second_banner .s_box .s_center .third_phone .fp4 {width:200px; margin-left:-80px;}
+section .fourth_banner {height:1680px;}
+section .fourth_banner .fr_box {width:1600px;}
+section .fourth_banner .title {font-size:38px; margin:150px 0 50px 180px;}
+section .fourth_banner .best_box .plus {width:35px; margin-left:550px; margin-top:35px;}
+section .fourth_banner .best_box .best {width:630px; height:680px;}
+section .fourth_banner .best_box .img {width:630px; height:680px;}
+section .fourth_banner .best_box .hover {width:630px; height:680px;}
+section .fourth_banner .best_box .phone {width:630px; margin-top:-140px;}
+section .fourth_banner .best_box .f_best,
+section .fourth_banner .best_box .t_best {margin-left:180px;}
+section .fourth_banner .best_box .t_best,
+section .fourth_banner .best_box .ff_best { margin-top:20px;}
+section .fifth_banner .faq {width:1600px;}
+section .fifth_banner .faq .f_title {margin-left:180px; font-size:30px;}
+section .fifth_banner .faq .question p {font-size: 25px;}
+section .fifth_banner .faq .answear p {font-size: 15px;}
+section .fifth_banner .faq_box {margin-left:180px;}
+section .fifth_banner .faq .q_right {margin-left:260px;}
+section .fifth_banner .faq ul li {width:620px;}
+}
+
+@media screen and (max-width:1440px){
+header .menu ul li img {margin-left:50px;}
+section .main .visual_box .visual_1 .text,
+section .main .visual_box .visual_2 .text {padding:350px 0 0 200px;}
+section .first_banner .bar {width:864px;}
+section .second_banner .s_box .s_text .time {font-size:35px; margin:20px 0 0 120px;}
+section .second_banner .s_box .s_text .time.active {font-size:35px; left:0; margin:20px 0 0 120px;}
+section .second_banner .s_box .s_text .float_menu {font-size:35px; margin-right:120px; margin-left:198px;}
+section .second_banner .s_box .s_text .float_menu.active {margin-right:120px;}
+section .second_banner .s_box .s_center .first_phone .fp1 {margin-left:-135px;}
+section .second_banner .s_box .s_center .second_phone img {margin-left:-230px;}
+section .second_banner .s_box .s_center .third_phone .fp3 {width:160px; margin-left:-180px;}
+section .second_banner .s_box .s_center .third_phone .fp4 {width:200px; margin-left:-80px;}
+section .fourth_banner .title {margin:150px 0 50px 120px;}
+section .fourth_banner .best_box .plus {width:35px; margin-left:470px; margin-top:35px;}
+section .fourth_banner .best_box .best {width:580px; height:630px;}
+section .fourth_banner .best_box .img {width:580px; height:630px;}
+section .fourth_banner .best_box .hover {width:580px; height:630px;}
+section .fourth_banner .best_box .phone {width:580px; margin-top:-140px;}
+section .fourth_banner .best_box .f_best,
+section .fourth_banner .best_box .t_best {margin-left:120px;}
+section .fifth_banner .faq .f_title {margin-left:120px;}
+section .fifth_banner .faq_box {margin-left:120px;}
+section .fifth_banner .faq ul li {width:570px;}
+section .fifth_banner .faq .q_right {margin-left:200px;}
+}
+
+@media screen and (max-width:1200px){
+header .menu ul li img {margin-left:50px;}
+header .menu ul li {font-size: 17px;}
+header .menu ul li a {margin: 45px 30px;}
+header .menu ul li:nth-child(2) {margin-left:25px;}
+section .main .visual_box .visual_1 p,
+section .main .visual_box .visual_2 p {font-size: 50px;}
+section .main .visual_box .visual_1 span a,
+section .main .visual_box .visual_2 span a {font-size: 15px;}
+section .main .slide p {font-size:25px; }
+section .first_banner .left p {font-size:35px;}
+section .first_banner .bar {width:720px;}
+section .second_banner .s_box .s_text .time {font-size:30px; margin:20px 0 0 80px;}
+section .second_banner .s_box .s_text .time.active {font-size:30px; left:0; margin:20px 0 0 80px;}
+section .second_banner .s_box .s_text .float_menu {font-size:30px; margin-right:80px; margin-left:198px;}
+section .second_banner .s_box .s_text .float_menu.active {margin-right:80px;}
+section .second_banner .s_box .s_center .first_phone .fp1 {margin-left:-240px;}
+section .second_banner .s_box .s_center .second_phone img {margin-left:-330px;}
+section .second_banner .s_box .s_center .third_phone .fp3 {width:160px; margin-left:-300px;}
+section .second_banner .s_box .s_center .third_phone .fp4 {width:200px; margin-left:-80px;}
+section .fourth_banner .fr_box {width:1200px;}
+section .fourth_banner .title {margin-left:80px;}
+section .fourth_banner .best_box .plus {width:35px; margin-left:400px; margin-top:35px;}
+section .fourth_banner .best_box .best {width:510px; height:560px;}
+section .fourth_banner .best_box .img {width:510px; height:560px;}
+section .fourth_banner .best_box .hover {width:510px; height:560px;}
+section .fourth_banner .best_box .phone {width:510px; margin-top:-140px;}
+section .fourth_banner .best_box .f_best,
+section .fourth_banner .best_box .t_best {margin-left:80px;}
+section .fifth_banner .faq {width:1200px;}
+section .fifth_banner .faq .f_title {margin-left:80px;}
+section .fifth_banner .faq_box {margin-left:80px;}
+section .fifth_banner .faq ul li {width:500px;}
+section .fifth_banner .faq .question p {font-size: 22px;}
+section .fifth_banner .faq .q_right {margin-left:130px;}
+footer .ft_box .ftl_box {width:1050px;}
+}
+
+
+/*태블릿 : max-width:1024px,max-width:768px*/
+@media screen and (max-width:1024px){
+header .menu ul li img {margin-left:20px; margin-top:-13px;}
+header .menu ul li {font-size: 14px;}
+header .menu ul li a {margin:45px 20px;}
+section .first_banner .left p {font-size: 25px; padding:270px 0 140px 0;}
+section .first_banner .left span {font-size: 17px;}
+section .first_banner .left h6 {font-size: 13px;}
+section .first_banner .right .top ul li {width:200px;}
+section .first_banner .right .top .box {width:200px; height:200px;}
+section .first_banner .right .top p {font-size: 12px;}
+section .first_banner .bar {width:615px;}
+section .second_banner .s_box .s_text .time {font-size:25px; margin:20px 0 0 90px;}
+section .second_banner .s_box .s_text .time.active {font-size:25px; left:0; margin:20px 0 0 90px;}
+section .second_banner .s_box .s_text .float_menu h1 {font-size: 25px;}
+section .second_banner .s_box .s_text .float_menu span {font-size: 20px;}
+section .second_banner .s_box .s_text .float_menu {font-size:25px; margin-right:90px; margin-left:198px;}
+section .second_banner .s_box .s_text .float_menu.active {margin-right:90px;}
+section .second_banner .s_box .s_center .first_phone .fp1 {width:140px; margin-left:-300px;}
+section .second_banner .s_box .s_center .first_phone .fp2 {width:140px; margin-left:10px;}
+section .second_banner .s_box .s_center .second_phone img {margin-left:-440px; width:150px;}
+section .second_banner .s_box .s_center .third_phone .fp3 {width:120px; margin-left:-370px;}
+section .second_banner .s_box .s_center .third_phone .fp4 {width:160px; margin-left:-60px;}
+section .third_banner .th_box {width:1200px;}
+section .third_banner .t_text > p {font-size:35px;}
+section .third_banner .t_text .number .numberset span {font-size: 25px;}
+section .third_banner .t_text .info {font-size: 12px;}
+section .third_banner .t_text .numberset .f_number {margin-left:180px;}
+section .third_banner .t_text .numberset .s_number {margin-left:236px;}
+section .third_banner .t_text .numberset .t_number {margin-left:260px;}
+section .third_banner .text span a {font-size:15px;}
+section .fourth_banner {width:100%; height:1450px;}
+section .fourth_banner .title {font-size: 35px;}
+section .fourth_banner .best_box .plus {width:30px; margin-left:350px; margin-top:35px;}
+section .fourth_banner .best_box .best {width:425px; height:475px;}
+section .fourth_banner .best_box .img {width:425px; height:475px;}
+section .fourth_banner .best_box .hover {width:425px; height:475px;}
+section .fourth_banner .best_box .phone {width:425px; margin-top:-77px;}
+section .fourth_banner .best_box .hover p {font-size: 20px; margin:35px 0 0 50px;}
+section .fourth_banner .best_box .hover span {font-size:15px; margin:25px 0 0 50px;}
+section .fifth_banner .faq {width:1024px;}
+section .fifth_banner .faq .f_title {font-size: 25px;}
+section .fifth_banner .faq .question span,
+section .fifth_banner .faq .question p {font-size: 18px;}
+section .fifth_banner .faq .question img {width: 18px;}
+section .fifth_banner .faq .answear p {font-size: 12px;}
+section .fifth_banner .question {height:40px;}
+section .fifth_banner .l_question {height:70px;}
+section .fifth_banner .faq ul li {width:430px;}
+section .fifth_banner .faq .q_right {margin-left:40px;}
+footer .ft_box .ftl_box {width:900px;}
+}
+
+@media screen and (max-width:768px){
+.hamberger {width:100%; height:100vh; display:block; background-color: #000; opacity: 80%; position:absolute; z-index: 200000;}
+.hamberger ul {margin:0 auto;}
+.hamberger .nav a {color:#fff; text-align: center; margin-top:50px; font-size: 35px;}
+.hamberger .nav1 {margin-top:130px;}
+.hamberger .nagative::after {content:'X'; color:#fff; float:right; font-size: 30px; margin-right:30px; margin-top:-100px; cursor: pointer;}
+header .menu ul {width:100%;}
+header .menu ul li {float:none;}
+header .menu .nav a {display: none;}
+header .menu ul li:first-child {float:left;}
+header .menu .menu_img {display:block; width:40px;}
+header .menu ul li:last-child {float:right;}
+section .main .visual_box .visual_1 .text {padding:350px 0 0 100px; }
+section .main .visual_box .visual_1 p {font-size: 70px;}
+section .main .visual_box .visual_1 span a {font-size:25px; margin:30px 20px 0 0;}
+section .main .visual_box .visual_2 .text {padding:350px 0 0 100px; }
+section .main .visual_box .visual_2 p {font-size: 70px;}
+section .main .visual_box .visual_2 span a {font-size: 25px; margin:30px 20px 0 0;}
+section .main .slide .pc {display:none;}
+section .main .slide .mobile {display:block;}
+section .main .slide .mobile .sub_2 {display:none;}
+section .main .slide {background-color: rgb(255, 136, 158); opacity: 80%; width:100%; height:100vh; margin-left:0; transition:all 1s; position:absolute;}
+section .main .slide img {width:65px; margin:0; transform: rotate(90deg); animation: fadeUp 0.8s infinite alternate; float:right; margin-top: 15px; margin-right: 10px;}
+@keyframes fadeUp {
+    from {margin-top:25px; opacity: 0.5;}
+    to {margin-top:10px; opacity: 1;}
+}
+section .main .slide p { font-size: 30px; margin:0; position: absolute; z-index: 1000; margin-top: 25px; margin-left: 30px;}
+section .first_banner .b_box {width:100%; height:100vh; margin:0 auto;}
+section .first_banner .left {width:100%;margin:0 auto;}
+section .first_banner .left p {padding:0; text-align: center; margin-top:100px;}
+section .first_banner .left a {margin:0 auto; margin-top: 45px; display:block; width:200px;}
+section .first_banner .left h6 {text-align: center; margin-top: 20px;}
+}
+
+
+/*모바일 :max-width:480px*/
+@media screen and (max-width:480px){
+
+}
